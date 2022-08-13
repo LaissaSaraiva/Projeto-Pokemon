@@ -24,9 +24,9 @@ font-family: 'Poppins', sans-serif;
   background-color:white;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 2px rgb(88, 88, 88);
   padding: 20px;
-  max-width: 550px;
+  max-width: 450px;
   min-height: 300px;
 }
 
@@ -34,7 +34,7 @@ font-family: 'Poppins', sans-serif;
 
 h1 {
   font-weight: 900;
-  font-size: 25px;
+  font-size: 21px;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -46,11 +46,12 @@ h1 span {
 hr {
   margin-top: 10px;
   border-top: 2px solid rgb(95, 90, 90); 
+
 }
 
 /*  Logo */
 
-.pokemon__logo {
+.pokemon__logo, #pokemon__imagens {
   text-align: center;
 }
 
@@ -63,7 +64,7 @@ hr {
 
 #pokemon__form {
   font-weight: 900;
-  font-size: 18px;
+  font-size: 17px;
   color:rgb(33, 44, 91);
 }
 
@@ -85,5 +86,23 @@ hr {
 
 #pokemon__form input:focus {
  outline-color: rgb(33, 44, 91);
- 
+}
+
+/* Imagens dos Pokemons */
+
+#pokemon__imagens img{
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px #3D66BA;
+  margin: 10px 10px;
+}
+
+/* Descrição dos Pokemons */
+#pokemon__descricao {
+  font-family: monospace;
+  font-size: 15px;
+  border: 1px solid #C29905;
+  background: #FAC705;
+  border-radius: 5px;
+  padding: 10px;
 }
