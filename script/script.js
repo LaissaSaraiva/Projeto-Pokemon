@@ -21,14 +21,13 @@ formulario.addEventListener("submit", function (evento) {
   let descricao = document.getElementById("pokemon__descricao");
 
   let resposta = " ";
-  let erro = " ";
 
   fetch(urlForm)
     .then((descricao) => descricao.json())
     .then(function (data) {
       console.log(data);
       resposta = `Nome:   ${maiuscula(data.name)} <br>`;
-      resposta = resposta + `Tipo: "  ${maiuscula(data.types[0].type.name)}`;
+      resposta = resposta + `Tipo:  ${maiuscula(data.types[0].type.name)}`;
       descricao.innerHTML = resposta;
 
       imagem.innerHTML =
