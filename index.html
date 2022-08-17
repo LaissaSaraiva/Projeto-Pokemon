@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokémon</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <div class="pokemon__container">
-    <h1>Trabalhando com <span>HTML</span>, <span>CSS</span> e utilizando <span>JavaScript</span> para fazer consultas online.</h1>
-    <hr/>
-    <div class="pokemon__logo">
-      <img src="./img/pokemon-logo.png" alt="Logo Pokemon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="pokemon__container">
+      <h1>
+        Trabalhando com <span>HTML</span>, <span>CSS</span> e utilizando
+        <span>JavaScript</span> para fazer consultas online.
+      </h1>
+      <hr />
+      <div class="pokemon__logo">
+        <img src="./img/pokemon-logo.png" alt="Logo Pokemon" />
+      </div>
+      <form action="" id="pokemon__form">
+        <label for="pokemon__busca">Nome ou número do Pokémon:</label>
+        <input
+          type="text"
+          name="name"
+          id="pokemon__busca"
+          placeholder="Ex: Pikachu ou 25"
+        />
+        <input type="submit" value="BUSCAR" />
+      </form>
+      <div id="pokemon__imagens"></div>
+      <div id="pokemon__descricao">
+        <p>...</p>
+      </div>
     </div>
-
-    <form action="" id="pokemon__form">
-      <label for="pokemon__busca">Nome ou número do Pokémon:</label>
-      <input type="text" name="name" id="pokemon__busca" placeholder="Ex: Pikachu ou 25">
-      <input type="submit" value="BUSCAR">
-    </form>
-    <div id="pokemon__imagens">
-    </div>
-    <div id="pokemon__descricao">
-      <p>...</p>
-    </div>
-  
-  </div>
-  <script src="./script/script.js"></script>
-</body>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
