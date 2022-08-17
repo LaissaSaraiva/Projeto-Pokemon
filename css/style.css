@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;900&display=swap");
 
+:root {
+  --cor-background: #f0f8ff;
+  --cor-preto: #000000;
+  --cor-branco: #ffffff;
+  --cor-azul-principal: #212c5b;
+  --cor-azul-secundario: #3d66ba;
+  --cor-cinza-principal: #585858;
+  --cor-cinza-secundario: #cccccc;
+  --cor-amerelo-principal: #fac705;
+  --cor-amarelo-secundario: #c29905;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +25,7 @@ body {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: var(--cor-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,10 +34,10 @@ body {
 }
 
 .pokemon__container {
-  background-color: white;
-  border: 1px solid black;
+  background-color: var(--cor-branco);
+  border: 1px solid var(--cor-preto);
   border-radius: 5px;
-  box-shadow: 1px 1px 2px rgb(88, 88, 88);
+  box-shadow: 1px 1px 2px var(--cor-cinza-principal);
   padding: 20px;
   max-width: 450px;
   min-height: 400px;
@@ -38,16 +50,16 @@ h1 {
   font-size: 21px;
   text-align: center;
   letter-spacing: 1px;
-  text-shadow: 1px 2px 2px #ccc;
+  text-shadow: 1px 2px 2px var(--cor-cinza-secundario);
 }
 
 h1 span {
-  color: #3d66ba;
+  color: var(--cor-azul-secundario);
 }
 
 hr {
   margin-top: 10px;
-  border-top: 2px solid rgb(95, 90, 90);
+  border-top: 2px solid var(--cor-cinza-principal);
 }
 
 /*  Logo */
@@ -67,36 +79,36 @@ hr {
 #pokemon__form {
   font-weight: 900;
   font-size: 17px;
-  color: rgb(33, 44, 91);
-  text-shadow: 1px 2px 2px #ccc;
+  color: var(--cor-azul-principal);
+  text-shadow: 1px 2px 2px var(--cor-cinza-secundario);
 }
 /*  */
 #pokemon__form input {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--cor-cinza-secundario);
   border-radius: 5px;
 }
 
 #pokemon__form input[type="submit"] {
-  background: rgb(33, 44, 91);
-  color: white;
+  background: var(--cor-azul-principal);
+  color: var(--cor-branco);
   letter-spacing: 1px;
   font-weight: 900;
   cursor: pointer;
 }
 
 #pokemon__form input:focus {
-  outline-color: rgb(33, 44, 91);
+  outline-color: var(--cor-azul-principal);
 }
 
 /* Imagens dos Pokemons */
 
 #pokemon__imagens img {
-  border: 1px solid #ccc;
+  border: 1px solid var(--cor-cinza-secundario);
   border-radius: 50%;
-  box-shadow: 1px 2px 3px rgb(33, 44, 91);
+  box-shadow: 1px 2px 3px var(--cor-azul-principal);
   margin: 10px 10px;
 }
 
@@ -105,8 +117,8 @@ hr {
   font-family: monospace;
   text-align: center;
   font-size: 15px;
-  border: 1px solid #c29905;
-  background: #fac705;
+  border: 1px solid var(--cor-amarelo-secundario);
+  background: var(--cor-amerelo-principal);
   border-radius: 5px;
   padding: 10px;
 }
